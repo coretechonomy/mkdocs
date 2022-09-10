@@ -1,0 +1,35 @@
+site_name: Core Techonomy Docs
+plugins:
+  - markdownextradata
+  - search
+theme:
+  name: material
+  logo: assets/logo.ico
+  favicon: assets/logo.ico
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  ithelpdesk:
+    link: https://id.atlassian.com/login?application=ondemand&continue=https%3A%2F%2Fcoretechonomy.atlassian.net%2Fservicedesk%2Fcustomer%2Fportal%2F3%2Fgroup%2F3%2Fcreate%2F1&tenant=https%3A%2F%2Fcoretechonomy.atlassian.net
